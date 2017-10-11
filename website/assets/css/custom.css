@@ -1,0 +1,389 @@
+/*!
+ * Start Bootstrap - One Page Wonder (http://startbootstrap.com/template-overviews/one-page-wonder)
+ * Copyright 2013-2017 Start Bootstrap
+ * Modifed By Ferdi Reza Armandha, Inspired From elansetiawan.com
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
+ */
+
+/*body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    /*body {
+        padding-top: 56px;
+    }
+}*/
+body {
+  overflow-x: hidden;
+}
+.op-nav {
+  border-color: rgba(34,34,34,.05);
+  background-color: #fff;
+}
+.fixed-top {
+  z-index: 999;
+}
+.txt-rotate {
+  font-size: 27px;
+}
+footer {
+  border-top: 2px solid #fff;
+}
+/* wrapper sidebar */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+/*#wrapper.toggled {
+    padding-left: 250px;
+}*/
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    margin-left: 0px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+#wrapper.toggled #tx-brand::before {
+  opacity: 0;
+}
+#wrapper.toggled #tx-brand::after {
+  content: "\f00d";
+  position: absolute;
+  right: 10px;
+  top: 19px;
+  font-size: 22px;
+  background: #000;
+}
+/* /wrapper sidebar */
+
+/* nav menu name */
+#wrapper .link-a {
+  display: none;
+}
+#wrapper.toggled .link-a {
+  display: inline-block;
+}
+/* nav menu name */
+
+/* Sidebar Styles */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar-nav li a i {
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  font-size: 28px;
+}
+#wrapper.toggled li a i {
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  font-size: 20px;
+}
+#wrapper.toggled .sidebar-nav {
+  width: 250px;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 45px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    transition: 0.4s;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #5175C0;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    /*#wrapper {
+        padding-left: 50px;
+    }*/
+    #wrapper.toggled {
+        padding-left: 0px;
+    }
+    #sidebar-wrapper {
+        width: 50px;
+        left: 50px;
+        margin-left: -50px;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+    #page-content-wrapper {
+        padding: 20px 0 20px 60px;
+        position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    .sidebar-nav {
+      width: 50px;
+    }
+    .sidebar-nav li {
+      text-indent: 4px;
+    }
+    .sidebar-nav li.sidebar-brand {
+      text-indent: 6px;
+      font-size: 24px;
+    }
+}
+/* /sidebar */
+#about .about-card {
+	margin: 5rem 0;
+}
+#contact #contact-card {
+	margin: 5rem 0;
+  width: 100%;
+}
+header.masthead > .overlay {
+    width: 100%;
+    padding: 5rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+}
+/*contact field */
+.card-block .container {
+  padding-top: 15px;
+}
+.contact-title h4 {
+  text-align: center;
+}
+.contact-title span {
+  padding: 0px 15px;
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  background: #fff;
+}
+.contact-title h4::after {
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 28px;
+  right: 100px;
+  left: 100px;
+  border-bottom: 1px solid #000;
+}
+.contact-title h4::before {
+  display: table;
+  content: "";
+}
+/* /contact field */
+@media (min-width: 992px) {
+    header.masthead > .overlay {
+        padding: 10rem 0;
+    }
+    .op-nav {
+      border-color: rgba(34,34,34,.05);
+      background-color: transparent;
+    }
+    #contact-field {
+      width: 100%;
+      height: 100vh;
+    }
+}
+header.masthead {
+    background: url('https://unsplash.it/1900/1080?image=38') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/*additional style*/
+.section-change {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+}
+@media (min-width: 992px) {
+  .op-nav .navbar-brand {
+    color: #fff;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+  }
+}
+/*circled button*/
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+/*scroll nav*/
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+@media (min-width: 992px) {
+  .navbar.scrolled {
+      /*background: rgb(68, 68, 68); /* IE */
+      background: #343a40; /* NON-IE */
+    }
+}
+/* /scroll nav */
+
+/*circle button*/
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+a.btn-circle {
+	-moz-transition: ease-out .8s;
+	-webkit-transition: ease-out .8s;
+	transition: ease-out .8s;
+	box-shadow: inset 0 0 0 0 #fff;
+}
+a.btn:hover {
+	box-shadow: inset 0 100px 0 #fff;
+	color: #000;
+}
+.btn-circle.btn-lg {
+  width: 40px;
+  height: 40px;
+  padding: 7px 10px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-facebook {
+	background: #3B5998;
+	color: #fff;
+}
+.btn-linkedin {
+	background: #007bb5;
+	color: #fff;
+}
+.btn-google {
+	background: #dd4b39;
+	color: #fff;
+}
+.btn-ig {
+	background: #bc2a8d;
+	color: #fff;
+}
+.btn-twitter {
+	background: #00aced;
+	color: #fff;
+}
+.btn-skype {
+	background: #00aff0;
+	color: #fff;
+}
+/*neon effect*/
+.site-logo a {
+  font-size: 1.5em;
+  color: #228DFF;
+  font-family: Iceland;
+}
+
+.site-logo a:hover {
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+/* webkit glow */
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+/*glow for mozilla*/
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+/* glow */
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+/*/neon effect*/

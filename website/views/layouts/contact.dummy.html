@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Page Mine</title>
+
+    <!-- Bootstrap core CSS -->
+    <?php
+      $this->headLink()->appendStylesheet("/website/assets/bootstrap/css/bootstrap.min.css");
+    ?>
+    <!-- Custom styles for this template -->
+    <?php
+      $this->headLink()->appendStylesheet("/website/assets/font-awesome/css/font-awesome.min.css");
+      $this->headLink()->appendStylesheet("/website/assets/css/one-page-wonder.css");
+    ?>
+    <?= $this->headLink() ?>
+  </head>
+
+  <body>
+
+    <!-- Masthead & Navigation -->
+    <?php echo $this->inc("/snippet/navigation"); ?>
+    <?php echo $this->inc("/snippet/masthead"); ?>
+    <!--/Masthead & Navigation -->
+    <!-- content -->
+    <div id="content">
+      <?php echo $this->layout()->content; ?>
+    </div>
+    <!-- /content -->
+    <!-- Footer -->
+    <?php echo $this->inc("/snippet/footer"); ?>
+    <!-- /footer-->
+    <!-- Bootstrap core JavaScript -->
+    <script src="/website/assets/jquery/jquery.min.js"></script>
+    <script src="/website/assets/popper/popper.min.js"></script>
+    <script src="/website/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    function checkScroll(){
+      var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+      if($(window).scrollTop() > startY) {
+        $('.navbar').addClass("scrolled");
+      } else {
+        $('.navbar').removeClass("scrolled");
+      }
+    }
+    if($('.navbar').length > 0){
+      $(window).on("scroll load resize", function(){
+        checkScroll();
+      });
+    }
+    $(".sec-btn").click(function() {
+      $('html,body').animate({
+        scrollTop: $("#sec-a").offset().top },'slow');
+      });
+    </script>
+  </body>
+
+</html>

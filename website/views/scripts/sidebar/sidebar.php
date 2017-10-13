@@ -29,6 +29,10 @@
                if($page->getId() == 8) { ?>
                  <i class="fa fa-phone"></i>
                <?php } ?>
+               <?php
+               if($page->getId() == 12) { ?>
+                 <i class="fa fa-newspaper-o"></i>
+               <?php } ?>
                <span class="link-a"><?php echo ucfirst($page->getLabel()); ?>
                </span>
              </a>

@@ -3,12 +3,33 @@
 return [
     "general" => [
         "timezone" => "Europe/Berlin",
+        "path_variable" => "",
+        "domain" => "",
+        "redirect_to_maindomain" => FALSE,
         "language" => "en",
         "validLanguages" => "en",
-        "debug" => "1",
+        "fallbackLanguages" => [
+            "en" => ""
+        ],
+        "defaultLanguage" => "",
+        "extjs6" => "1",
+        "loginscreencustomimage" => "",
+        "disableusagestatistics" => FALSE,
+        "debug" => TRUE,
+        "debug_ip" => "",
+        "http_auth" => [
+            "username" => "",
+            "password" => ""
+        ],
+        "custom_php_logfile" => TRUE,
         "debugloglevel" => "debug",
-        "custom_php_logfile" => "1",
-        "extjs6" => "1"
+        "disable_whoops" => FALSE,
+        "debug_admin_translations" => FALSE,
+        "devmode" => FALSE,
+        "logrecipient" => NULL,
+        "viewSuffix" => "",
+        "instanceIdentifier" => "",
+        "show_cookie_notice" => FALSE
     ],
     "database" => [
         "adapter" => "Mysqli",
@@ -22,34 +43,128 @@ return [
     ],
     "documents" => [
         "versions" => [
-            "steps" => "10"
+            "days" => NULL,
+            "steps" => 10
         ],
         "default_controller" => "default",
         "default_action" => "default",
         "error_pages" => [
             "default" => "/"
         ],
-        "createredirectwhenmoved" => "",
+        "createredirectwhenmoved" => FALSE,
         "allowtrailingslash" => "no",
-        "generatepreview" => "1"
+        "generatepreview" => TRUE
     ],
     "objects" => [
         "versions" => [
-            "steps" => "10"
+            "days" => NULL,
+            "steps" => 10
         ]
     ],
     "assets" => [
         "versions" => [
-            "steps" => "10"
-        ]
+            "days" => NULL,
+            "steps" => 10
+        ],
+        "icc_rgb_profile" => "",
+        "icc_cmyk_profile" => "",
+        "hide_edit_image" => FALSE,
+        "disable_tree_preview" => FALSE
     ],
     "services" => [
-
+        "google" => [
+            "client_id" => "",
+            "email" => "",
+            "simpleapikey" => "",
+            "browserapikey" => ""
+        ]
     ],
     "cache" => [
+        "enabled" => FALSE,
+        "lifetime" => NULL,
+        "excludePatterns" => "",
         "excludeCookie" => ""
     ],
     "httpclient" => [
-        "adapter" => "Zend_Http_Client_Adapter_Socket"
+        "adapter" => "Zend_Http_Client_Adapter_Socket",
+        "proxy_host" => "",
+        "proxy_port" => "",
+        "proxy_user" => "",
+        "proxy_pass" => ""
+    ],
+    "outputfilters" => [
+        "less" => FALSE,
+        "lesscpath" => ""
+    ],
+    "webservice" => [
+        "enabled" => FALSE
+    ],
+    "applicationlog" => [
+        "mail_notification" => [
+            "send_log_summary" => FALSE,
+            "filter_priority" => NULL,
+            "mail_receiver" => ""
+        ],
+        "archive_treshold" => "30",
+        "archive_alternative_database" => ""
+    ],
+    "email" => [
+        "sender" => [
+            "name" => "farasite auto reply",
+            "email" => "ferdi.reza@salt.co.id"
+        ],
+        "return" => [
+            "name" => "",
+            "email" => ""
+        ],
+        "method" => "smtp",
+        "smtp" => [
+            "host" => "mail.salt.co.id",
+            "port" => "25",
+            "ssl" => "",
+            "name" => "SALT",
+            "auth" => [
+                "method" => "login",
+                "username" => "ferdi.reza@salt.co.id",
+                "password" => "P@ssw0rdSALT"
+            ]
+        ],
+        "debug" => [
+            "emailaddresses" => "ferdi.reza@salt.co.id"
+        ],
+        "bounce" => [
+            "type" => "",
+            "maildir" => "",
+            "mbox" => "",
+            "imap" => [
+                "host" => "",
+                "port" => "",
+                "username" => "",
+                "password" => "",
+                "ssl" => FALSE
+            ]
+        ]
+    ],
+    "newsletter" => [
+        "sender" => [
+            "name" => "",
+            "email" => ""
+        ],
+        "return" => [
+            "name" => "",
+            "email" => ""
+        ],
+        "method" => NULL,
+        "smtp" => [
+            "host" => "",
+            "port" => "",
+            "ssl" => "",
+            "name" => "",
+            "auth" => [
+                "method" => "",
+                "username" => ""
+            ]
+        ],
+        "usespecific" => FALSE
     ]
 ];

@@ -23,7 +23,7 @@
       <div class="card" id="contact-card">
         <div class="card-header">
           <div class="contact-title">
-            <h4><span>Any Question</span></h4>
+            <h4><span>Any Question?</span></h4>
           </div>
         </div>
         <div class="card-body">
@@ -45,21 +45,28 @@
                 </div>
               </div>
               <div class="col-lg-6 col-sm-12">
-                <div class="form-group">
-                  <input type="text" name="fs-name" placeholder="Your First Name" class="form-control"  />
-                </div>
-                <div class="form-group">
-                  <input type="text" name="fs-name" placeholder="Your Last Name" class="form-control"  />
-                </div>
-                <div class="form-group">
-                  <input type="text" name="fs-name" placeholder="Your Email" class="form-control"  />
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="" placeholder="What You Want To Ask" rows="5"></textarea>
-                </div>
-                <div class="form-group">
-                  <button disabled="disabled" class="btn btn-primary btn-block">Send email</button>
-                </div>
+                <form id="contactform" action="" method="POST">
+                  <div class="form-group">
+                    <input type="text" name="fs-name" placeholder="Your First Name" class="form-control"  />
+                    <span id="err_fs-name" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="ls-name" placeholder="Your Last Name" class="form-control"  />
+                    <span id="err_ls-name" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="ur-mail" placeholder="Your Email" class="form-control"  />
+                    <span id="err_ur-mail" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message_area" placeholder="What You Want To Ask" rows="5"></textarea>
+                    <span id="err_message_area" class="text-danger"></span>
+                  </div>
+                  <div class="form-group">
+                    <!-- <button class="btn btn-primary btn-block">Send email</button> -->
+                    <input type="submit" class="btn btn-primary btn-block bt-send" value="Send" />
+                  </div>
+                </form>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@
       $this->headLink()->appendStylesheet("/website/assets/css/custom.css");
       $this->headLink()->appendStylesheet("/website/assets/css/animate.css");
     ?>
-    <?= $this->headLink() ?>
+    <?= $this->headLink(); ?>
   </head>
 
   <body>
@@ -48,6 +48,7 @@
     <script src="/website/assets/jquery/jquery.min.js"></script>
     <script src="/website/assets/popper/popper.min.js"></script>
     <script src="/website/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/website/assets/submit.js"></script>
     <script>
     function checkScroll(){
       var startY = $('.navbar').height() * 2; //The point where the navbar changes in px

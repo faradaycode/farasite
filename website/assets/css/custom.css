@@ -154,7 +154,7 @@ footer {
     background: none;
 }
 
-@media(min-width:768px) {
+@media(min-width:992px) {
     /*#wrapper {
         padding-left: 50px;
     }*/
@@ -175,7 +175,7 @@ footer {
     }
     #wrapper.toggled #page-content-wrapper {
         position: relative;
-        margin-right: 0;
+        margin-right: 0px;
     }
     .sidebar-nav {
       width: 50px;
@@ -191,6 +191,9 @@ footer {
 /* /sidebar */
 #about .about-card {
 	margin: 5rem 0;
+}
+#article .card {
+  margin: 5rem 0;
 }
 #contact #contact-card {
 	margin: 5rem 0;

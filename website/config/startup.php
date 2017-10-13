@@ -45,30 +45,30 @@ $front->addModuleDirectory(PIMCORE_DOCUMENT_ROOT . "/customModuleDirectory");
 \Pimcore::getDiContainer()->set("foo", "bar");
 
 */
-\Pimcore::getEventManager()->attach("object.postUpdate", function (\Zend_EventManager_Event $event) {
-    $object = $event->getTarget();
-    // do something ...
-    $arrerror = array();
-    //title
-    if (strlen($object->getNewstitle()) <= 10 ) {
-      //throw new \Pimcore\Model\Element\ValidationException("Title harus lebih dari 10 karakter", 2412);
-      array_push($arrerror,"Title harus lebih dari 10 karakter");
-    }
-
-    //author
-    if (strlen($object->getNewsauthor()) <= 5) {
-        //throw new \Pimcore\Model\Element\ValidationException("Author harus lebih dari 5 karakter", 2412);
-        array_push($arrerror,"Author harus lebih dari 5 karakter");
-    } else if (!preg_match('/^[A-Ea-e].+/',$object->getNewsauthor())) {
-      array_push($arrerror,"Author harus berawalan huruf A-E");
-    }
-    if(count($arrerror)>0) {
-      throw new \Pimcore\Model\Element\ValidationException(implode(", ",$arrerror), 2412);
-    }
-
-    //conten
-
-    // get a parameter from the event
-
-    // ...
-});
+// \Pimcore::getEventManager()->attach("object.postUpdate", function (\Zend_EventManager_Event $event) {
+//     $object = $event->getTarget();
+//     // do something ...
+//     $arrerror = array();
+//     //title
+//     if (strlen($object->getNewstitle()) <= 10 ) {
+//       //throw new \Pimcore\Model\Element\ValidationException("Title harus lebih dari 10 karakter", 2412);
+//       array_push($arrerror,"Title harus lebih dari 10 karakter");
+//     }
+//
+//     //author
+//     if (strlen($object->getNewsauthor()) <= 5) {
+//         //throw new \Pimcore\Model\Element\ValidationException("Author harus lebih dari 5 karakter", 2412);
+//         array_push($arrerror,"Author harus lebih dari 5 karakter");
+//     } else if (!preg_match('/^[A-Ea-e].+/',$object->getNewsauthor())) {
+//       array_push($arrerror,"Author harus berawalan huruf A-E");
+//     }
+//     if(count($arrerror)>0) {
+//       throw new \Pimcore\Model\Element\ValidationException(implode(", ",$arrerror), 2412);
+//     }
+//
+//     //conten
+//
+//     // get a parameter from the event
+//
+//     // ...
+// });

@@ -18,62 +18,52 @@
       </div>
     </div>
     <?php } else { ?>
-  <div class="container">
-    <div class="row">
-      <div class="card" id="contact-card">
-        <div class="card-header">
-          <div class="contact-title">
-            <h4><span>Any Question?</span></h4>
+  <div class="container-fluid">
+    <div class="contact-form">
+      <div class="contact-title py-2">
+        <h4><span>Any Question?</span></h4>
+      </div>
+      <div class="row pt-5">
+        <div class="col-lg-6 col-sm-12">
+          <div class="form-group">
+            <h5><i class="fa fa-map-marker"></i> Address</h5>
+            <span><?php echo $this->input("addr"); ?></span>
+          </div>
+          <div class="form-group">
+            <h5><i class="fa fa-phone"></i> Phone Number</h5>
+            <span><?php echo $this->input("phone"); ?></span>
+          </div>
+          <div class="form-group">
+            <h5><i class="fa fa-envelope-o"></i> Email</h5>
+            <span><?php echo $this->input("email"); ?></span>
           </div>
         </div>
-        <div class="card-body">
-          <div class="card-block">
-            <div class="container">
-              <div class="row">
-              <div class="col-lg-6" "col-sm-12">
-                <div class="form-group">
-                  <h5>Address</h5>
-                  <span><?php echo $this->input("addr"); ?></span>
-                </div>
-                <div class="form-group">
-                  <h5>Phone Number</h5>
-                  <span><?php echo $this->input("phone"); ?></span>
-                </div>
-                <div class="form-group">
-                  <h5>Email</h5>
-                  <span><?php echo $this->input("email"); ?></span>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                <form id="contactform" action="" method="POST">
-                  <div class="form-group">
-                    <input type="text" name="fs-name" placeholder="Your First Name" class="form-control"  />
-                    <span id="err_fs-name" class="text-danger"></span>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="ls-name" placeholder="Your Last Name" class="form-control"  />
-                    <span id="err_ls-name" class="text-danger"></span>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="ur-mail" placeholder="Your Email" class="form-control"  />
-                    <span id="err_ur-mail" class="text-danger"></span>
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" name="message_area" placeholder="What You Want To Ask" rows="5"></textarea>
-                    <span id="err_message_area" class="text-danger"></span>
-                  </div>
-                  <div class="form-group">
-                    <!-- <button class="btn btn-primary btn-block">Send email</button> -->
-                    <input type="submit" class="btn btn-primary btn-block bt-send" value="Send" />
-                  </div>
-                </form>
-              </div>
+        <div class="col-lg-6 col-sm-12">
+          <form id="contactform" action="" method="POST">
+            <div class="form-group">
+              <input type="text" name="fs-name" placeholder="Your First Name" class="form-control"  />
+              <span id="err_fs-name" class="text-danger"></span>
             </div>
-          </div>
+            <div class="form-group">
+              <input type="text" name="ls-name" placeholder="Your Last Name" class="form-control"  />
+              <span id="err_ls-name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" name="ur-mail" placeholder="Your Email" class="form-control"  />
+              <span id="err_ur-mail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message_area" placeholder="What You Want To Ask" rows="5"></textarea>
+              <span id="err_message_area" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <!-- <button class="btn btn-primary btn-block">Send email</button> -->
+              <input type="submit" class="btn btn-primary btn-block bt-send" value="Send" />
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
-</div>
 <?php } ?>
 </section>

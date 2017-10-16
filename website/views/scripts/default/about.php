@@ -1,6 +1,5 @@
 <section id="<?php echo $this->document->getName(); ?>" class="animated bounceInLeft">
   <div class="container">
-    <div class="row">
       <div class="card about-card">
       	<div class="card-body">
       		<div class="container">
@@ -234,6 +233,5 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>

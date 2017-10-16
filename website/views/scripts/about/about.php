@@ -1,9 +1,9 @@
 <section>
   <div class="container">
-    <div class="card animated bounceInLeft" id="contact-card">
+    <div class="card animated bounceInLeft">
     	<div class="card-body">
     		<div class="container">
-      		<div class="row">
+      		<div class="">
       			<div class="col-lg-4 col-sm-12`">
               <div class="img-profile text-center">
                 <img class="img-thumbnail rounded-circle" src="http://placehold.it/150x150" alt="profil" />

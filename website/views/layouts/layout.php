@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -24,6 +23,28 @@
   </head>
 
   <body>
+    <!-- <div class="loading text-center hidden">
+      <img src="/website/assets/ajax-loader.gif" class="img-fluid" />
+      <h5>Loading</h5>
+    </div> -->
+
+    <!-- modal alert -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
 
     <!-- Masthead & Navigation -->
     <div id="wrapper">
@@ -34,10 +55,13 @@
           <?php echo $this->inc("/snippet/masthead"); ?>
         <?php } ?>
         <!--/Masthead & Navigation -->
+
         <!-- content -->
-        <div class="content-op">
-          <?php echo $this->layout()->content; ?>
-        </div>
+        <main>
+          <div class="content-op">
+            <?php echo $this->layout()->content; ?>
+          </div>
+        </main>
         <!-- /content -->
         <!-- Footer -->
         <?php echo $this->inc("/snippet/footer"); ?>

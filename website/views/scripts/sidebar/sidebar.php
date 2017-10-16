@@ -3,7 +3,7 @@
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
             <a href="#" class="menu-toggle">
-              <span class="link-a">PARASITE</span>
+              <span class="link-a">FARASITE</span>
               <span id="tx-brand" class="fa fa-bars"></span>
             </a>
         </li>

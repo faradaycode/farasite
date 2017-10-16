@@ -6,9 +6,10 @@
         <h5>Your Site Name</h5>
         <?php echo $this->input("sitename",[
           "class" => "form-control",
-          "placeholder" => "Your Site Name Here.."
+          "placeholder" => "Your Site Name Here..",
+          "paramsite" => $this->input("sitename")
         ]); ?>
-      <?php }  else { ?>
+      <?php } else { ?>
       <a class="navbar-brand" href="/"><?php echo strtoupper($this->input("sitename")); ?></a>
     <?php } ?>
     </div>

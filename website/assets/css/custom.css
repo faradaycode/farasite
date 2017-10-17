@@ -288,10 +288,9 @@ header.masthead>.overlay {
     margin: 5rem 0;
   }
 
-  #article .card {
-    margin: 5rem 0;
+  #article {
+    padding-top: 7rem;
   }
-
 }
 
 header.masthead {
@@ -351,7 +350,11 @@ header.masthead {
 }
 
 /* /scroll nav */
-
+@media (min-width: 320px) and (max-width: 768px) {
+  section .col-sm-12 {
+    padding-bottom: 20px;
+  }
+}
 /*circle button*/
 
 .btn-circle {

@@ -95,6 +95,7 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+
     //typewriter js script by codepens
     var TxtRotate = function(el, toRotate, period) {
       this.toRotate = toRotate;
@@ -105,7 +106,7 @@
       this.tick();
       this.isDeleting = false;
     };
-
+    //array span for typewriter
     TxtRotate.prototype.tick = function() {
       var i = this.loopNum % this.toRotate.length;
       var fullTxt = this.toRotate[i];

@@ -1,5 +1,5 @@
 <?php //dump($this->getParam("paramnav")); ?>
-<nav class="navbar navbar-expand-lg <?php if($this->getParam("paramnav") == 1){ echo " navbar-light op-nav"; } else { echo " navbar-dark bg-dark";} ?> fixed-top">
+<nav class="navbar navbar-expand-lg <?php if($this->getParam("paramnav") == 1){ echo " navbar-light op-nav"; } else { echo " navbar-dark bg-danger";} ?> fixed-top">
   <div class="container-fluid">
     <div class="site-logo">
       <?php if($this->editmode) { ?>

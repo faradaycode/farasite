@@ -20,7 +20,7 @@ body {
 }
 
 .op-nav {
-  border-color: rgba(34, 34, 34, .05);
+  /*border-color: rgba(34, 34, 34, .05);*/
   background-color: #fff;
 }
 
@@ -46,7 +46,6 @@ footer {
 }
 
 /* wrapper sidebar */
-
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.2s ease;
@@ -182,15 +181,6 @@ footer {
   background: none;
 }
 
-@media (min-width: 331px) {
-  .about-me {
-    padding-bottom: 15px;
-  }
-  .my-info {
-    padding-bottom: 15px;
-  }
-}
-
 @media(min-width:992px) {
   /*#wrapper {
         padding-left: 50px;
@@ -232,6 +222,27 @@ footer {
   }
 }
 
+/*sticky note effect*/
+.sticky-note {
+  display: block;
+	padding: 10px 25px 10px;
+	margin:0 auto 20px auto;
+	width:250px;
+	height:100%;
+	line-height:1.5;
+	border:0;
+	border-radius:3px;
+	background: -webkit-linear-gradient(#F9EFAF, #F7E98D);
+	background: -moz-linear-gradient(#F9EFAF, #F7E98D);
+	background: -o-linear-gradient(#F9EFAF, #F7E98D);
+	background: -ms-linear-gradient(#F9EFAF, #F7E98D);
+	background: linear-gradient(#F9EFAF, #F7E98D);
+	box-shadow:0 4px 6px rgba(0,0,0,0.1);
+	overflow:hidden;
+	transition:box-shadow 0.5s ease;
+	font-smoothing:subpixel-antialiased;
+	max-width:520px;
+}
 /* /sidebar */
 
 header.masthead>.overlay {
@@ -278,7 +289,7 @@ header.masthead>.overlay {
     padding: 10rem 0;
   }
   .op-nav {
-    border-color: rgba(34, 34, 34, .05);
+    /*border-color: rgba(34, 34, 34, .05);*/
     background-color: transparent;
   }
   nav {
@@ -344,7 +355,8 @@ header.masthead {
 @media (min-width: 992px) {
   .navbar.scrolled {
     /*background: rgb(68, 68, 68); /* IE */
-    background: #343a40;
+    background: #dc3545;
+    border-bottom: 0px;
     /* NON-IE */
   }
 }
